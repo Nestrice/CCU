@@ -1,4 +1,4 @@
-package de.chiliconunity.app;
+package de.chiliconunity.controllers;
 
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
@@ -10,7 +10,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import de.chiliconunity.app.User.Gender;
+import de.chiliconunity.data.User;
+import de.chiliconunity.data.User.Gender;
+import de.chiliconunity.repositories.UserRepository;
 
 @Controller    // This means that this class is a Controller
 @RequestMapping(path="/user") // This means URL's start with /demo (after Application path)
